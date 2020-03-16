@@ -5,9 +5,4 @@ function startTimer() {
 
     makequestions();
 }
-function setTimer() {
-    var countdown = setInterval(function () {
-        secondsLeft--;
-        timerEl.textContent = "Time:" + secondsLeft;
-    })
-}
+
