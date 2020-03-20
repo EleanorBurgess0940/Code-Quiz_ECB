@@ -12,7 +12,7 @@
 
 <header>
     <a href="highscore.html">View High Scores</a>
-    <span class="float-right" id="timer">Timer:0</span>
+    <span id="timer" class="float-right">Timer:0</span>
 </header>
 
 <body>
@@ -31,7 +31,7 @@
                         But me careful to answer correctly or you will lose time!
                     </p>
 
-                    <button type="button" class="btn">Start</button>
+                    <button type="button" id="startBtn" class="btn">Start</button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="row justify-content-center">
                 <div class="col-10">
                     <div id="quiz" style="display:none">
-                        <h3 is="question">
+                        <h3 is="questions">
                             <p>Question</p>
                         </h3>
                         <hr>
@@ -55,7 +55,7 @@
                         </div>
 
 
-                        <button type="button" class="btn">Start</button>
+                        <button type="button" class="btn">Submit</button>
                     </div>
                 </div>
             </div>
