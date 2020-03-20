@@ -1,8 +1,7 @@
-var secondsLeft = (75)
+var timeEl = document.querySelector(".time");
 
-function startTimer() {
-    setTimer();
+timeEl.addEventListener("click", function () {
 
-    makequestions();
-}
+});
+
 

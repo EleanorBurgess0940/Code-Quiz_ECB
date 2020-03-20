@@ -12,7 +12,7 @@
 
 <header>
     <a href="highscore.html">View High Scores</a>
-    <span class="float-right">Timer:0</span>
+    <span class="float-right" id="timer">Timer:0</span>
 </header>
 
 <body>
@@ -21,25 +21,56 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10">
-                <h1>JavaScript Code Quiz</h1>
-                <hr>
-                <br>
-                <p> Try to answer the following questions about coding with JavaScript in 90 seconds!</p>
-                <button type="button" class="btn">Start</button>
+                <div id="start">
+                    <h1>JavaScript Code Quiz</h1>
+                    <hr>
+                    <br>
+                    <p>
+                        Try to answer the following questions about coding with JavaScript in 90 seconds!
+                        <br>
+                        But me careful to answer correctly or you will lose time!
+                    </p>
+
+                    <button type="button" class="btn">Start</button>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div id="quiz" style="display:none">
+                        <h3 is="question">
+                            <p>Question</p>
+                        </h3>
+                        <hr>
+                        <br>
+                        <div id="answers">
+                            <ul>
+                                <li class="answer" id="A">A</li>
+                                <li class="answer" id="B">B</li>
+                                <li class="answer" id="C">C</li>
+                                <li class="answer" id="D">D</li>
+                            </ul>
 
-    <script src=main.js></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+                        </div>
+
+
+                        <button type="button" class="btn">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src=main.js></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
