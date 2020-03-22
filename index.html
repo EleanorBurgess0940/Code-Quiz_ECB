@@ -18,7 +18,7 @@
 <body>
     <br>
     <br>
-    <div class="container">
+    <div class="container" id="homePage">
         <div class="row justify-content-center">
             <div class="col-10">
                 <div id="start">
@@ -35,42 +35,55 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <div id="quiz" style="display:none">
-                        <h3 is="questions">
-                            <p>Question</p>
-                        </h3>
-                        <hr>
-                        <br>
-                        <div id="answers">
-                            <ul>
-                                <li class="answer" id="A">A</li>
-                                <li class="answer" id="B">B</li>
-                                <li class="answer" id="C">C</li>
-                                <li class="answer" id="D">D</li>
-                            </ul>
+    </div>
+    <div class="container" id="quizPage">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div id="quiz" style="display:none">
+                    <h3 is="questions">
+                        <p>Question</p>
+                    </h3>
+                    <hr>
+                    <br>
+                    <div id="answers">
+                        <ul>
+                            <li class="answer" id="A">A</li>
+                            <li class="answer" id="B">B</li>
+                            <li class="answer" id="C">C</li>
+                            <li class="answer" id="D">D</li>
+                        </ul>
 
-                        </div>
-
-
-                        <button type="button" class="btn">Submit</button>
                     </div>
+                    <button type="button" class="btn">Submit</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src=main.js></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <div class="container" id="submit-score">
+        <div class="row">
+            <div class="col-10" style="display:none">
+                <h2> All Done!</h2>
+                <p id="user-score"></p>
+                <form class="form-group">
+                    <label for="new-score">Enter your name:</label>
+                    <input type="text" id="userName">
+                    <button type="button" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src=main.js></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
