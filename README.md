@@ -15,8 +15,14 @@ To wrap things i worked on the high score page and had it sort the scores numeri
 
 # Still working on.
 
-I would like the high score page to only display the top ten scores. 
+I would like the high score page to only display the top ten scores.
 
-![alt-text] https://github.com/EleanorBurgess0940/Code-Quiz_ECB/images/home.jpg
+# Helpful hands
 
+I took alot of help from Laurie Bernadel's for a code quiz. 
+https://github.com/lbernadel 
 
+![Home](images/home.PNG)
+![Questions](images/questions.PNG)
+![scores](images/scores.PNG)
+![endQuiz](images/endQuiz.PNG)
