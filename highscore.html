@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,15 +20,15 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10">
-                <h1>High Scores</h1>
-                <hr>
-                <br>
-                <button type="button" class="btn">Go Back</button>
-                <button type="button" class="btn">Clear Scores</button>
+                <h1 id='scoreTable'>High Scores</h1>
+                <ol id='highScoreList'></ol>
+                <button type="button" onclick="window.location.href = 'index.html';" class=" btn">Go Back</button>
+                <button type="button" id='clearBtn' class="btn">Clear Scores</button>
             </div>
         </div>
     </div>
 
+    <script src="highscores.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
