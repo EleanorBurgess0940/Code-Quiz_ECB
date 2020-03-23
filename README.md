@@ -17,6 +17,6 @@ To wrap things i worked on the high score page and had it sort the scores numeri
 
 I would like the high score page to only display the top ten scores. 
 
-![home] images/home.PNG
+![home](images/home.PNG)
 
 
