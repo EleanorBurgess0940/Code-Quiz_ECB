@@ -17,6 +17,6 @@ To wrap things i worked on the high score page and had it sort the scores numeri
 
 I would like the high score page to only display the top ten scores. 
 
-![alt-text] https://github.com/EleanorBurgess0940/Code-Quiz_ECB/images/home.jpg
+![home] images/home.PNG
 
 
