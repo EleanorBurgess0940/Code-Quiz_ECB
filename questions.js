@@ -1,82 +1,52 @@
 var questions = [
     {
-        question: "What is the tree that is located in Philadelphia's Washington Square Park that was grown from a seed taken on the Apollo 14 mission called?",
-        choiceA: "Satellite Seedling ",
-        choiceB: "Moon Tree",
-        choiceC: "Heaven Tree",
-        choiceD: "Space Wood ",
-        correct: "Moon Tree",
+        title: "What is the tree that is located in Philadelphia's Washington Square Park that was grown from a seed taken on the Apollo 14 mission called?",
+        choices: ["Satellite Seedling ", "Moon Tree", "Heaven Tree", "Space Wood "],
+        answer: "Moon Tree"
     },
     {
-        question: "When was the Philadelphia Zoo (the oldest zoo in America) chartered?",
-        choiceA: "1776",
-        choiceB: "1991",
-        choiceC: "1859",
-        choiceD: "1801",
-        correct: "1859",
+        title: "When was the Philadelphia Zoo (the oldest zoo in America) chartered?",
+        choices: ["1776", "1991", "1859", "1801"],
+        answer: "1859"
     },
     {
-        question: "How many syllables are in the word Philadelphia?",
-        choiceA: "6",
-        choiceB: "3",
-        choiceC: "2",
-        choiceD: "5",
-        correct: "5",
+        title: "How many syllables are in the word Philadelphia?",
+        choices: ["6", "3", "2", "5"],
+        answer: "5"
     },
     {
-        question: "In 1943 the new owner of the Philadelphia Phillies tried to change the name to?",
-        choiceA: "Philadelphia Yankees",
-        choiceB: "Philadelphia Red Bulls",
-        choiceC: "Philadelphia Blue Jays",
-        choiceD: "Philadelphia Union",
-        correct: "Philadelphia Blue Jays",
+        title: "In 1943 the new owner of the Philadelphia Phillies tried to change the name to?",
+        choices: ["Philadelphia Yankees", "Philadelphia Red Bulls", "Philadelphia Blue Jays", "Philadelphia Union"],
+        answer: "Philadelphia Blue Jays"
     },
     {
-        question: "What was the first university in Philadelphia to have both undergraduate and graduate studies?",
-        choiceA: "Drexel University",
-        choiceB: "University of Pennsylvania",
-        choiceC: "Saint Joseph's University",
-        choiceD: "Temple University",
-        correct: "University of Pennsylvania",
+        title: "What was the first university in Philadelphia to have both undergraduate and graduate studies?",
+        choices: ["Drexel University", "University of Pennsylvania", "Saint Joseph's University", "Temple University"],
+        answer: "University of Pennsylvania"
     },
     {
-        question: "Philadelphia's motto is Philadelphia maneto. What does it mean?",
-        choiceA: "let fraternal respect undergo",
-        choiceB: "let understanding apprecation withstand ",
-        choiceC: "let sisterly friendship endure",
-        choiceD: "let brotherly love endure",
-        correct: "let brotherly love endure",
+        title: "Philadelphia's motto is Philadelphia maneto. What does it mean?",
+        choices: ["let fraternal respect undergo", "let understanding apprecation withstand ", "let sisterly friendship endure", "let brotherly love endure"],
+        answer: "let brotherly love endure"
     },
     {
-        question: "What was Race Street formerly called?",
-        choiceA: "Sassafras Street",
-        choiceB: "Main Avenue",
-        choiceC: "Church Road",
-        choiceD: "Elbow Lane",
-        correct: "Sassafras Street",
+        title: "What was Race Street formerly called?",
+        choices: ["Sassafras Street", "Main Avenue", "Church Road", "Elbow Lane"],
+        answer: "Sassafras Street"
     },
     {
-        question: "What was the name of the nation's first daily newspaper?",
-        choiceA: "The Philadelphia Inquirer",
-        choiceB: "The Pennsylvania Packet and Daily Advertiser",
-        choiceC: "The Philadelphia Bulletin",
-        choiceD: "The Philadelphia Press",
-        correct: "The Pennsylvania Packet and Daily Advertiser",
+        title: "What was the name of the nation's first daily newspaper?",
+        choices: ["The Philadelphia Inquirer", "The Pennsylvania Packet and Daily Advertiser", "The Philadelphia Bulletin", "The Philadelphia Press"],
+        answer: "The Pennsylvania Packet and Daily Advertiser"
     },
     {
-        question: "How many murals are located in Philadelphia?",
-        choiceA: "2000+",
-        choiceB: "1000+",
-        choiceC: "3000+",
-        choiceD: "500+",
-        correct: "3000+",
+        title: "How many murals are located in Philadelphia?",
+        choices: ["2000+", "1000+", "3000+", "500+"],
+        answer: "3000+"
     },
     {
-        question: "Philadelphia became home to the first general purpose computer in which year?",
-        choiceA: "1982",
-        choiceB: "1946",
-        choiceC: "1991",
-        choiceD: "1940",
-        correct: "1946",
+        title: "Philadelphia became home to the first general purpose computer in which year?",
+        choices: ["1982", "1946", "1991", "1940"],
+        answer: "1946"
     },
-];
+]

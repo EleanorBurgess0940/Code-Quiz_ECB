@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Javascript Code Quiz</title>
+    <title>Philadelphia Trivia</title>
 </head>
 
 <header>
@@ -21,46 +21,38 @@
     <div class="container" id="homePage">
         <div class="row justify-content-center">
             <div class="col-10">
-                <div id="start">
-                    <h1>JavaScript Code Quiz</h1>
-                    <hr>
-                    <br>
-                    <p>
-                        Try to answer the following questions about coding with JavaScript in 90 seconds!
-                        <br>
-                        But me careful to answer correctly or you will lose time!
-                    </p>
 
-                    <button type="button" id="startBtn" class="btn">Start</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="quizPage">
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div id="quiz" style="display:none">
-                    <h3 is="questions">
-                        <p>Question</p>
-                    </h3>
-                    <hr>
+                <h1>Philadelphia Trivia </h1>
+                <hr>
+                <br>
+                <p>
+                    Try to answer the following questions about coding with JavaScript in 90 seconds!
                     <br>
-                    <div id="answers">
-                        <ul>
-                            <li class="answer" id="A">A</li>
-                            <li class="answer" id="B">B</li>
-                            <li class="answer" id="C">C</li>
-                            <li class="answer" id="D">D</li>
-                        </ul>
+                    But me careful to answer correctly or you will lose time!
+                </p>
 
-                    </div>
-                    <button type="button" class="btn">Submit</button>
-                </div>
+                <button type="button" id="startBtn" class="btn btn-lg">Start</button>
             </div>
         </div>
     </div>
 
-    <div class="container" id="submit-score">
+    <div class="container mt-5 d-none" id="quiz">
+        <div class="row">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container d-none" id="submit-score">
         <div class="row">
             <div class="col-10" style="display:none">
                 <h2> All Done!</h2>
@@ -74,7 +66,8 @@
         </div>
 
     </div>
-    <script src=main.js></script>
+    <script src="main.js"></script>
+    <script src="questions.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
