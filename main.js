@@ -1,3 +1,4 @@
+//various variables
 var startBtn = document.getElementById("startBtn");
 var submitBtn = document.getElementById("submitBtn");
 var secondsLeft = (90);
@@ -6,10 +7,10 @@ var questionHead = document.getElementById("questions");
 var answerChoices = document.getElementById("answers");
 var answerEl = document.getElementById("answers");
 var correctAnswers = (0);
-
 var questionNumber = -1;
 var answer = document.getElementById("answer");
 
+//function to start the timer when the start button is pressed
 function startTimer() {
     document.getElementById("homePage").classList.add("d-none");
     document.getElementById("quiz").classList.remove("d-none");
@@ -17,6 +18,7 @@ function startTimer() {
     renderQuestions();
 }
 
+//function to set the timer to 90 seconds and to make it so the timer goes in seconds to zero
 function setTimer() {
     var countdown = setInterval(function () {
         secondsLeft--;
@@ -28,6 +30,7 @@ function setTimer() {
     }, 1000);
 }
 
+//function makes questions appear with four answers in blocks
 function renderQuestions() {
     questionNumber++;
 
@@ -83,14 +86,14 @@ function submitScore() {
 
 }
 
-
+//two buttons need click events
 startBtn.addEventListener("click", startTimer);
 submitBtn.addEventListener("click", submitScore);
 
-
+//answer buttons that needed click events
 answerChoices.addEventListener("click", function (event) {
 
-
+    //this is somewhere i would like to work on i couldnt figure out how to get correct with out alerting correct
     if (answer === event.target.textContent) {
         alert("Correct!");
         correctAnswers++;
