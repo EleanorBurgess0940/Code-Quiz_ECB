@@ -19,51 +19,44 @@
     <br>
     <br>
     <!--This is the starting page with a start button-->
-    <div class="container" id="homePage">
-        <div class="row justify-content-center">
-            <div class="col-10">
+    <div class="container center" id="homePage">
+        <h1>Philadelphia Trivia </h1>
+        <hr>
+        <br>
+        <p>
+            Try to answer the following wild trivia questions about Philadelphia in 90 seconds!
+            <br>
+            And learn how cool Philadelphia is!
+            <br>
+            But me careful to answer correctly or you will lose time!
+            <br>
+            Try to beat the high score!
+        </p>
 
-                <h1>Philadelphia Trivia </h1>
-                <hr>
-                <br>
-                <p>
-                    Try to answer the following questions about coding with JavaScript in 90 seconds!
-                    <br>
-                    But me careful to answer correctly or you will lose time!
-                </p>
-
-                <button type="button" id="startBtn" class="btn btn-lg">Start</button>
-            </div>
-        </div>
+        <button id="startBtn" class="btn btn-lg">Start</button>
     </div>
+
     <!-- This is the quiz main part-->
-    <div class="container mt-5 d-none" id="quiz">
+    <div class="container" id="quiz">
         <div class="row">
-            <div class="col-10 col-lg-8" id="QA-block">
-                <h3 id="questions" class="mb-4">QUESTION</h3>
-                <ul id="answers">
-                    <li class="answerChoice">A) </li>
-                    <li class="answerChoice">B) </li>
-                    <li class="answerChoice">C) </li>
-                    <li class="answerChoice">D) </li>
-                </ul>
+            <div id="QA-block" class="centered">
+                <h3 id="questions"></h3>
+                <ul id="answers"></ul>
             </div>
         </div>
     </div>
 
-    <!---This is the final screen-->
-    <div class="container d-none" id="submit-score">
-        <div class="row">
-            <div class="col-10">
-                <h2> All Done!</h2>
-                <p id="user-score"></p>
+    <!---This is the final screen this leads to the high score page-->
+    <div class="container" id="submit-score">
+        <div class="row centered">
+            <h2> All Done! </h2>
+            <p id="user-score">
                 <form class="form-group">
                     <label id="new-score">Enter your name:</label>
                     <input type="text" id="userName">
-                    <button type="button" onclick="window.location.href = 'highscore.html';" id="submitBtn"
-                        class="btn">Submit</button>
+                    <button type="button" onclick="window.location.href = 'highscore.html';" id="submitBtn" class="btn">Submit</button>
                 </form>
-            </div>
+            </p>
         </div>
 
     </div>

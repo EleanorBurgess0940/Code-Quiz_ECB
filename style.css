@@ -1,12 +1,40 @@
-header{
-    background-color: white;
-    border-bottom: 10px black solid;
-    padding: 10px;
-    font-size: 20px;
+header {
+  background-color: white;
+  border-bottom: 10px black solid;
+  padding: 10px;
+  font-size: 20px;
 }
-body{
-    background-color: lightgreen;
+a {
+  color: black;
 }
-.container{
-    background-color: white
+.centered {
+  text-align: center;
+}
+body {
+  background-color: lightgreen;
+}
+.container {
+  background-color: white;
+}
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+#startBtn {
+  background-color: gray;
+  text-align: center;
+}
+
+h2 h3 {
+  padding: 20px;
+}
+button {
+  background-color: lightgreen;
+}
+td {
+  text-align: center;
 }
