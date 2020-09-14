@@ -1,34 +1,28 @@
-var submitBtn = document.getElementById("submitBtn");
-var clearBtn = document.getElementById("clearBtn");
+function printHighscores() {
+  //local storage for the high score page
+  var highscores = JSON.parse(window.localStorage.getItem("highScores")) || [];
 
-//local storage for the high score page
-(highScores = JSON.parse(localStorage.getItem("highScores") || "[]")),
-  (highScoreList = document.getElementById("highScoreList"));
-highScores.sort(function(low, high) {
-  return high.score - low.score;
-});
+  //
+  highscores.sort(function (a, b) {
+    return b.score - a.score;
+  });
 
-//this function makes and sorts the high scores
-window.addEventListener("load", function() {
-  html = "<table><tr>";
-  for (var scoreNum = 0; scoreNum < highScores.length; scoreNum++) {
-    html +=
-      "<td>" +
-      highScores[scoreNum].name +
-      "</td>" +
-      "<td>" +
-      highScores[scoreNum].score +
-      "</td>";
-  }
-  html += "</tr></table>";
-  document.getElementById("highScoreList").innerHTML = html;
-});
+  highscores.forEach(function (score) {
+    // create li tag for each high score
+    var liTag = document.createElement("li");
+    liTag.textContent = score.initials + " - " + score.score;
 
+    // display on page
+    var olEl = document.getElementById("highscores");
+    olEl.appendChild(liTag);
+  });
+}
 //this function clears the high scores
-clearBtn.addEventListener("click", clearScores);
-startBtn.addEventListener("click", startTimer);
+document.getElementById("clear").onclick = clearHighscores;
 
-function clearScores() {
-  localStorage.clear();
+function clearHighScores() {
+  window.localStorage.removeItem("highscores");
   location.reload();
 }
+
+printHighscores();
